@@ -8,18 +8,21 @@ public class BTForMang {
 //    - Tạo mảng để lưu những số chẵn đó vào
 //    - Duyệt mảng để in ra kết quả sau khi nạp vào
 
-        //Tạo list và add vô list
-        ArrayList<Integer> list = new ArrayList<>();
-        for(int i = 0; i <= 50; i++){
+        int[] mangSoChan = new int[26];
+        int index = 0;
+
+        for(int i = 0; i <= 50; i++) {
             if(i % 2 == 0){
-                list.add(i);
+                mangSoChan[index] = i;
+                index++;
             }
         }
-        //Duyệt list và in ra
         System.out.print("Các số chắn từ 0 - 50 là: ");
-        for (int item: list){
+        for (int item: mangSoChan){
             System.out.print(item + " ");
         }
 
     }
+
+
 }
