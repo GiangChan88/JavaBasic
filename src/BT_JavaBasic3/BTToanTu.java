@@ -2,9 +2,10 @@ package BT_JavaBasic3;
 
 
 public class BTToanTu {
-    int a = 10;
-    int b = 15;
-    int c = 5;
+    //- Tạo ra ít nhất 3 biến bất kỳ lưu giá trị trong class đó (static - static thuộc class)
+    static int a = 10;
+    static int b = 15;
+    static int c = 5;
 
     public void onToanTu(){
         System.out.println("Số a = "+ a);
@@ -19,7 +20,7 @@ public class BTToanTu {
         System.out.println("==================================");
     }
 
-    int number = 100;
+    static int number = 100;
     public void check(int n){
         if(n == number){
             System.out.println(n+" == " +number);
